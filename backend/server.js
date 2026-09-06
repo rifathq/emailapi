@@ -34,6 +34,10 @@ const contactLimiter = rateLimit({
   },
 });
 
+app.get("/", (req, res) => {
+  res.json({ status: "ok", service: "contact-api" });
+});
+
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok" });
 });
