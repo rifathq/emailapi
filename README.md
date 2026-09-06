@@ -47,7 +47,7 @@ Edit `backend/.env`:
 PORT=5000
 EMAIL_USER=your-sending-address@gmail.com
 EMAIL_PASS=your-16-char-app-password
-RECEIVER_EMAIL=moonlit4637@gmail.com
+RECEIVER_EMAIL=mepromoter22@gmail.com
 CLIENT_ORIGIN=http://localhost:5173
 ```
 
