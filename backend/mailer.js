@@ -3,7 +3,10 @@ const nodemailer = require("nodemailer");
 // Single shared transporter, built once from env vars.
 // Never log EMAIL_USER / EMAIL_PASS anywhere.
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  requireTLS: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
